@@ -1,0 +1,162 @@
+/* =========================
+   CSS Variables (Theme)
+========================= */
+:root {
+    --bg: #0f1724;
+    --card: #0b1220;
+    --muted: #9aa4b2;
+    --accent: #60a5fa;
+    --text: #e6eef8;
+}
+
+/* =========================
+   Global Reset
+========================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+/* =========================
+   Body Layout
+========================= */
+body {
+    padding-top: 200px;
+    padding: 32px;
+
+    font-family: Inter, Segoe UI, Helvetica, Arial, sans-serif;
+    color: var(--text);
+
+    background: linear-gradient(
+        180deg,
+        var(--bg),
+        #051025
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* =========================
+   Main Container
+========================= */
+.container {
+    max-width: 900px;
+    width: 100%;
+    margin-top: 82px;
+
+    padding: 28px;
+    border-radius: 12px;
+
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    box-shadow: 0 6px 20px rgba(2, 6, 23, 0.6);
+}
+
+/* =========================
+   Hero Section
+========================= */
+.hero {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.title {
+    font-size: 28px;
+    margin-bottom: 6px;
+}
+
+.subtitle {
+    color: var(--muted);
+    margin-bottom: 12px;
+}
+
+/* =========================
+   Button
+========================= */
+.btn {
+    display: inline-block;
+
+    padding: 10px 16px;
+    border-radius: 8px;
+
+    background: linear-gradient(
+        90deg,
+        var(--accent),
+        #4299e1
+    );
+
+    color: #03213a;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* =========================
+   Content Sections
+========================= */
+.about,
+.features,
+.screenshot {
+    margin: 18px 0;
+    padding: 12px;
+    border-radius: 8px;
+
+    background: rgba(255, 255, 255, 0.02);
+}
+
+/* =========================
+   Features List
+========================= */
+.features ul {
+    list-style: disc;
+    margin-left: 20px;
+    color: var(--muted);
+}
+
+/* =========================
+   Screenshot Placeholder
+========================= */
+.screenshot-box {
+    height: 160px;
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--muted);
+    border: 1px dashed rgba(255, 255, 255, 0.03);
+
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.02),
+        rgba(255, 255, 255, 0.01)
+    );
+}
+
+/* =========================
+   Footer
+========================= */
+.foot {
+    margin-top: 14px;
+
+    font-size: 13px;
+    text-align: center;
+    color: var(--muted);
+}
+
+/* =========================
+   Responsive
+========================= */
+@media (min-width: 900px) {
+    .title {
+        font-size: 34px;
+    }
+}
